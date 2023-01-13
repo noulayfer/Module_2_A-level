@@ -1,3 +1,5 @@
+package com.fedorenko;
+
 import com.fedorenko.action.Actions;
 import com.fedorenko.util.UserInput;
 

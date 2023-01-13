@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76c8cd89-b52e-44bc-9a5d-ffa3c7c600ab" name="Changes" comment="create new project">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/Actions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/CreateAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/DeleteAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/ExitAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/FindAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/ShowAllAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Invoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/InvoiceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Technics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/TechnicsType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Telephone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Television.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/repositry/InvoiceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/InvoiceAgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/InvoiceAmountComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/InvoicePriceComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/ShopService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/UnableToReadDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/util/GetRandomTechnics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/util/StringGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/util/UserInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/fedorenko/service/ShopServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Telephone.java" beforeDir="false" />
-    </list>
+    <list default="true" id="76c8cd89-b52e-44bc-9a5d-ffa3c7c600ab" name="Changes" comment="LJ3-364" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,15 +43,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -208,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673481894225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="LJ3-364">
+      <created>1673649523804</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673649523804</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +200,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create new project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new project" />
+    <MESSAGE value="LJ3-364" />
+    <option name="LAST_COMMIT_MESSAGE" value="LJ3-364" />
   </component>
 </project>
