@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76c8cd89-b52e-44bc-9a5d-ffa3c7c600ab" name="Changes" comment="LJ3-364" />
+    <list default="true" id="76c8cd89-b52e-44bc-9a5d-ffa3c7c600ab" name="Changes" comment="Main to com.fedorenko package" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +58,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.fedorenko" />
       <recent name="com.fedorenko.service" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673649523804</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Main to com.fedorenko package">
+      <created>1673650034689</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673650034689</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +209,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create new project" />
     <MESSAGE value="LJ3-364" />
-    <option name="LAST_COMMIT_MESSAGE" value="LJ3-364" />
+    <MESSAGE value="Main to com.fedorenko package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main to com.fedorenko package" />
   </component>
 </project>
