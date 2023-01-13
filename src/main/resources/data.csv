@@ -1,0 +1,13 @@
+type,series,model,diagonal,screen type,country,price
+Telephone,S-10,Samsung,none,QLED,none,200
+Telephone,C-50,IPhone,none,AMOLED,none,250
+Telephone,v_80,Xiomi,none,QLED,none,150
+Telephone,df465,Huawei,none,AMOLED,none,200
+Telephone,K80,Google,none,AMOLED,none,300
+Telephone,p40,,none,QLED,none,100
+Television,RTI-14,none,25,LED,China,1500
+Television,PVM-30,none,17,LCD,Germany,2000
+Television,S-40,none,30,QLED,China,1650
+Television,A-22,none,21,OLED,Japan,1800
+Television,MP-60,none,22,QLED,South Korea,1700
+Television,SBU-4,none,19,,USA,2100

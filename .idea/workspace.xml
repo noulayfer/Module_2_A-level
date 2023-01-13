@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76c8cd89-b52e-44bc-9a5d-ffa3c7c600ab" name="Changes" comment="create new project" />
+    <list default="true" id="76c8cd89-b52e-44bc-9a5d-ffa3c7c600ab" name="Changes" comment="create new project">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/Actions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/CreateAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/DeleteAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/ExitAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/FindAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/action/ShowAllAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/InvoiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Technics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/TechnicsType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Telephone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/model/Television.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/repositry/InvoiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/InvoiceAgeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/InvoiceAmountComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/InvoicePriceComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/service/UnableToReadDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/util/GetRandomTechnics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/util/StringGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fedorenko/util/UserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/fedorenko/service/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Telephone.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,16 +45,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/model/Telephone.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/fedorenko/model/Telephone.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KCbT0Cx7JPGbzFr40NdLOew9V6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,12 +75,116 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.fedorenko.service" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.fedorenko.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ShopServiceTest">
+    <configuration name="ShopServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fedorenko.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fedorenko.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fedorenko.service.ShopServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.firstThreeInvoices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fedorenko.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fedorenko.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fedorenko.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="firstThreeInvoices" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.firstThreeInvoices_negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fedorenko.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fedorenko.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fedorenko.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="firstThreeInvoices_negative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.lessThanEighteenInvoice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fedorenko.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fedorenko.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fedorenko.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="lessThanEighteenInvoice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.sortInvoices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fedorenko.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fedorenko.service" />
+      <option name="MAIN_CLASS_NAME" value="com.fedorenko.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="sortInvoices" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShopServiceTest" />
+        <item itemvalue="JUnit.ShopServiceTest.sortInvoices" />
+        <item itemvalue="JUnit.ShopServiceTest.lessThanEighteenInvoice" />
+        <item itemvalue="JUnit.ShopServiceTest.firstThreeInvoices_negative" />
+        <item itemvalue="JUnit.ShopServiceTest.firstThreeInvoices" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673481772370</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create new project">
+      <created>1673481894225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673481894225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
