@@ -32,7 +32,7 @@ public class ShopService {
         return shopService;
     }
 
-    public List<Invoice> getAll() {
+    public List<Invoice> getAllInvoices() {
         return INVOICE_REPOSITORY.getAll();
     }
 
@@ -65,21 +65,21 @@ public class ShopService {
 
     public Map<TechnicsType, Long> getTypeInfo(@NonNull List<Invoice> invoiceList) {
         return invoiceList.stream()
-                .flatMap(x -> x.getAll().stream())
+                .flatMap(x -> x.getInvoiceTechnics().stream())
                 .collect(Collectors.groupingBy(Technics::getTechnicsType, Collectors.counting()));
     }
 
     public int minInvoice(@NonNull final List<Invoice> invoiceList) {
         return invoiceList.stream()
-                .min(Comparator.comparingInt(x -> x.getAll().stream().mapToInt(Technics::getPrice).sum()))
+                .min(Comparator.comparingInt(x -> x.getInvoiceTechnics().stream().mapToInt(Technics::getPrice).sum()))
                 .stream().peek(invoice -> System.out.println(invoice.getCustomer()))
-                .flatMap(x -> x.getAll().stream())
+                .flatMap(x -> x.getInvoiceTechnics().stream())
                 .mapToInt(Technics::getPrice).sum();
     }
 
     public int allInvoiceSum(@NonNull final List<Invoice> invoiceList) {
         return invoiceList.stream()
-                .flatMap(x -> x.getAll().stream())
+                .flatMap(x -> x.getInvoiceTechnics().stream())
                 .mapToInt(Technics::getPrice).sum();
     }
 
@@ -91,8 +91,8 @@ public class ShopService {
 
     public List<Invoice> oneTypeInvoices(@NonNull final List<Invoice> invoiceList) {
         return invoiceList.stream()
-                .filter(y -> 1 == y.getAll().stream()
-                        .map(t -> t.getTechnicsType())
+                .filter(y -> 1 == y.getInvoiceTechnics().stream()
+                        .map(Technics::getTechnicsType)
                         .distinct()
                         .toArray()
                         .length).collect(Collectors.toList());
@@ -135,7 +135,7 @@ public class ShopService {
         final ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
         StringBuilder result = new StringBuilder();
         try (final InputStream resourceAsStream = contextClassLoader.getResourceAsStream(fileName);
-             BufferedReader bf = new BufferedReader(new InputStreamReader(resourceAsStream));) {
+             BufferedReader bf = new BufferedReader(new InputStreamReader(resourceAsStream))) {
             String strAppend;
             while ((strAppend = bf.readLine()) != null) {
                 result.append(strAppend + "\n");

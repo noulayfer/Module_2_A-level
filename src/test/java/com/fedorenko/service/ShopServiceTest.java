@@ -6,7 +6,6 @@ import com.fedorenko.util.GetRandomTechnics;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +19,6 @@ class ShopServiceTest {
     private InvoiceRepository repository;
     private Invoice invoice;
     private static final String FILE_NAME = "data.csv";
-
     private Customer customer;
 
 
@@ -41,14 +39,14 @@ class ShopServiceTest {
         final Invoice invoice2 = target.dataToInvoice(FILE_NAME);
         expected.add(invoice1);
         expected.add(invoice2);
-        Assertions.assertEquals(expected, target.getAll());
+        Assertions.assertEquals(expected, target.getAllInvoices());
     }
 
     @Test
     void getAll_negative() {
         List<Invoice> expected = new ArrayList<>();
         expected.add(invoice);
-        Assertions.assertNotEquals(expected, target.getAll());
+        Assertions.assertNotEquals(expected, target.getAllInvoices());
     }
 
     @Test
@@ -334,10 +332,10 @@ class ShopServiceTest {
         final Technics technics2 = GetRandomTechnics.get();
         final Technics technics3 = GetRandomTechnics.get();
         final Invoice invoice1 = new Invoice(customer);
-        final Invoice invoice2 = new Invoice(customer);;
-        final Invoice invoice3 = new Invoice(customer);;
-        final Invoice invoice4 = new Invoice(customer);;
-        final Invoice invoice5 = new Invoice(customer);;
+        final Invoice invoice2 = new Invoice(customer);
+        final Invoice invoice3 = new Invoice(customer);
+        final Invoice invoice4 = new Invoice(customer);
+        final Invoice invoice5 = new Invoice(customer);
         repository.addInvoice(invoice1);
         repository.addInvoice(invoice2);
         repository.addInvoice(invoice3);
@@ -376,10 +374,10 @@ class ShopServiceTest {
         final Technics technics2 = GetRandomTechnics.get();
         final Technics technics3 = GetRandomTechnics.get();
         final Invoice invoice1 = new Invoice(customer);
-        final Invoice invoice2 = new Invoice(customer);;
-        final Invoice invoice3 = new Invoice(customer);;
-        final Invoice invoice4 = new Invoice(customer);;
-        final Invoice invoice5 = new Invoice(customer);;
+        final Invoice invoice2 = new Invoice(customer);
+        final Invoice invoice3 = new Invoice(customer);
+        final Invoice invoice4 = new Invoice(customer);
+        final Invoice invoice5 = new Invoice(customer);
         repository.addInvoice(invoice1);
         repository.addInvoice(invoice2);
         repository.addInvoice(invoice3);

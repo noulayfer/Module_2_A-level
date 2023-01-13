@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Invoice {
-    private final List<Technics> LIST_Of_TECHNICS = new ArrayList<>();;
+    private final List<Technics> LIST_Of_TECHNICS = new ArrayList<>();
     private final Customer customer;
     private InvoiceType invoiceType;
     private static final int LIMIT_TYPE_PRICE = 3000;
@@ -27,7 +27,7 @@ public class Invoice {
         isWholesale();
     }
 
-    public List<Technics> getAll() {
+    public List<Technics> getInvoiceTechnics() {
         return LIST_Of_TECHNICS;
     }
 
@@ -36,12 +36,12 @@ public class Invoice {
         return "Invoice{" + " TIME[" +
                 LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) +
                 "] USER_DATA[customer=" + customer +
-                "] INVOICE_DATA" + getAll() +
+                "] INVOICE_DATA" + getInvoiceTechnics() +
                 '}';
     }
 
     private void isWholesale() {
-        int priceOfTechnics = getAll().stream().mapToInt(x -> x.price).sum();
+        int priceOfTechnics = getInvoiceTechnics().stream().mapToInt(x -> x.price).sum();
         if (priceOfTechnics >= LIMIT_TYPE_PRICE) {
             invoiceType = InvoiceType.WHOLESALE;
         }
