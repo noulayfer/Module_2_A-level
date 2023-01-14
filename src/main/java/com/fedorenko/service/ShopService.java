@@ -118,6 +118,26 @@ public class ShopService {
                         .thenComparing(INVOICE_PRICE_COMPARATOR)
         ).collect(Collectors.toList());
     }
+
+    public void showAllStatistics() {
+        System.out.println("~".repeat(10));
+        System.out.println("This is sum of all invoices " + this.allInvoiceSum(INVOICE_REPOSITORY.getAll()));
+        System.out.println("~".repeat(10));
+        System.out.println("This is first three invoices " + this.firstThreeInvoices(INVOICE_REPOSITORY.getAll()));
+        System.out.println("~".repeat(10));
+        System.out.println("This is type info" + this.getTypeInfo(INVOICE_REPOSITORY.getAll()));
+        System.out.println("~".repeat(10));
+        System.out.println("This is less than 18 age invoices " + this.lessThanEighteenInvoice(INVOICE_REPOSITORY.getAll()));
+        System.out.println("~".repeat(10));
+        System.out.println("This is min invoice " + this.minInvoice(INVOICE_REPOSITORY.getAll()));
+        System.out.println("~".repeat(10));
+        System.out.println("This is one type invoices " + this.oneTypeInvoices(INVOICE_REPOSITORY.getAll()));
+        System.out.println("~".repeat(10));
+        System.out.println("This is retail invoices " + this.retailInvoices(INVOICE_REPOSITORY.getAll()));
+        System.out.println("~".repeat(10));
+        System.out.println("This is sorted invoices " + this.sortInvoices(INVOICE_REPOSITORY.getAll()));
+    }
+
     private Technics randomTechnics(@NonNull final Map<String, String> mapWithData) {
         final String series = mapWithData.get("series");
         final String screenType = mapWithData.get("screen type");

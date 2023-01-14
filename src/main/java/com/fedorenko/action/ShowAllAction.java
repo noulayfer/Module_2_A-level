@@ -3,6 +3,6 @@ package com.fedorenko.action;
 public class ShowAllAction implements Action {
     @Override
     public void execute() {
-        SHOP_SERVICE.getAllInvoices();
+        System.out.println(SHOP_SERVICE.getAllInvoices());
     }
 }

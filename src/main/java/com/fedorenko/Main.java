@@ -10,25 +10,9 @@ public class Main {
     public static void main(String[] args) {
         final ShopService shopService = ShopService.getInstance();
         final InvoiceRepository invoiceRepository = InvoiceRepository.getInstance();
-        for (int i = 0; i < 15; i++) {
+        while(invoiceRepository.getAll().size() < 15) {
             shopService.dataToInvoice("data.csv");
         }
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.allInvoiceSum(invoiceRepository.getAll()));
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.firstThreeInvoices(invoiceRepository.getAll()));
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.getTypeInfo(invoiceRepository.getAll()));
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.lessThanEighteenInvoice(invoiceRepository.getAll()));
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.minInvoice(invoiceRepository.getAll()));
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.oneTypeInvoices(invoiceRepository.getAll()));
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.retailInvoices(invoiceRepository.getAll()));
-        System.out.println("~".repeat(10));
-        System.out.println(shopService.sortInvoices(invoiceRepository.getAll()));
 
         while (true) {
             int a = UserInput.menu(Actions.mapToNames());

@@ -10,6 +10,7 @@ public enum Actions {
     FIND("Find invoice", new FindAction()),
     DELETE("Delete invoice", new DeleteAction()),
     SHOW_ALL("Show all invoices", new ShowAllAction()),
+    STATISTICS("Show statistics", new ShowStatisticsAction()),
     EXIT("End the program", new ExitAction());
     private final String name;
     private final Action action;
