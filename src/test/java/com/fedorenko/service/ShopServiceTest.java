@@ -2,7 +2,7 @@ package com.fedorenko.service;
 
 import com.fedorenko.model.*;
 import com.fedorenko.repositry.InvoiceRepository;
-import com.fedorenko.util.GetRandomTechnics;
+import util.GetRandomTechnics;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,6 @@ class ShopServiceTest {
 
     private ShopService target;
     private InvoiceRepository repository;
-
     private static PersonService personService;
     private static Technics technics1;
     private static Technics technics2;

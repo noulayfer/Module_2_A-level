@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Invoice {
-    private final List<Technics> LIST_Of_TECHNICS = new ArrayList<>();
+    private final List<Technics> listOfTechnics = new ArrayList<>();
     private final Customer customer;
     private InvoiceType invoiceType;
     private static final int LIMIT_TYPE_PRICE = 3000;
@@ -23,12 +23,12 @@ public class Invoice {
     }
 
     public void addProduct(@NonNull final Technics technics) {
-        LIST_Of_TECHNICS.add(technics);
-        isWholesale();
+        listOfTechnics.add(technics);
+        wholesaleProcess();
     }
 
     public List<Technics> getInvoiceTechnics() {
-        return LIST_Of_TECHNICS;
+        return listOfTechnics;
     }
 
     @Override
@@ -40,8 +40,8 @@ public class Invoice {
                 '}';
     }
 
-    private void isWholesale() {
-        int priceOfTechnics = getInvoiceTechnics().stream().mapToInt(x -> x.price).sum();
+    private void wholesaleProcess() {
+        int priceOfTechnics = getInvoiceTechnics().stream().mapToInt(Technics::getPrice).sum();
         if (priceOfTechnics >= LIMIT_TYPE_PRICE) {
             invoiceType = InvoiceType.WHOLESALE;
         }

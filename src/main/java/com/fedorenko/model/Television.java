@@ -3,11 +3,9 @@ package com.fedorenko.model;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 public class Television extends Technics {
     private final int diagonal;
     private final String country;
@@ -23,9 +21,9 @@ public class Television extends Technics {
     @Override
     public String toString() {
         return "Television{" +
-                "series='" + series + '\'' +
-                ", screenType='" + screenType + '\'' +
-                ", price=" + price +
+                "series='" + super.getSeries() + '\'' +
+                ", screenType='" + super.getScreenType() + '\'' +
+                ", price=" + super.getPrice() +
                 ", diagonal=" + diagonal +
                 ", country=" + country +
                 '}';

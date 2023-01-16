@@ -17,8 +17,7 @@ public class ShopService {
     private static final InvoiceRepository INVOICE_REPOSITORY = InvoiceRepository.getInstance();
 
     private static ShopService shopService;
-
-    private static final InvoiceAgeComparator INVOICE_AGE_COMPARATOR = new InvoiceAgeComparator();
+    private static  final InvoiceAgeComparator INVOICE_AGE_COMPARATOR = new InvoiceAgeComparator();
     private static final InvoiceAmountComparator INVOICE_AMOUNT_COMPARATOR = new InvoiceAmountComparator();
     private static final InvoicePriceComparator INVOICE_PRICE_COMPARATOR = new InvoicePriceComparator();
 
@@ -45,9 +44,10 @@ public class ShopService {
         final Map<String, String> technicsMap = new HashMap<>();
         final Invoice invoice = new Invoice(new PersonService().generateCustomer());
         for (int index : indexesOfTechnics) {
+            final String[] rawValues = linesOfData[index].split(",");
             for (int i = 0; i < columnsOfKeys.length; i++) {
                 String key = columnsOfKeys[i];
-                String value = linesOfData[index].split(",")[i];
+                String value = rawValues[i];
                 if (value.isBlank()) {
                     try {
                         throw new UnableToReadDataException();
@@ -168,7 +168,7 @@ public class ShopService {
 
     private Telephone createTelephone(@NonNull final Map<String, String> mapWithData, final String series,
                                       final String screenType, final int price) {
-        final String model = mapWithData.get("com/fedorenko/model");
+        final String model = mapWithData.get("model");
         return new Telephone(series, screenType, price, model);
     }
 

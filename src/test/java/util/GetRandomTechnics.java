@@ -1,7 +1,7 @@
-package com.fedorenko.util;
+package util;
 
 import com.fedorenko.model.Technics;
-import com.fedorenko.model.TechnicsType;
+import com.fedorenko.util.StringGenerator;
 
 import java.util.Random;
 

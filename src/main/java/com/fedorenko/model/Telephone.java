@@ -18,9 +18,9 @@ public class Telephone extends Technics {
     @Override
     public String toString() {
         return "Telephone{" +
-                "series='" + series + '\'' +
-                ", screenType='" + screenType + '\'' +
-                ", price=" + price +
+                "series='" + super.getSeries() + '\'' +
+                ", screenType='" + super.getScreenType() + '\'' +
+                ", price=" + super.getPrice() +
                 ", technicsType=" + technicsType +
                 ", model=" + model +
                 '}';

@@ -7,9 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Technics {
-    final String series;
-    final String screenType;
-    int price;
+    private final String series;
+    private final String screenType;
+    private int price;
     TechnicsType technicsType;
 
     public Technics(@NonNull final String series, final String screenType, final int price) {
